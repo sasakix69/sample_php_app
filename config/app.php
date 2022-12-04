@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tokyo',
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +82,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    // 翻訳サービスプロバイダーが使用するデフォルトのロケールを設定
+    'locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +96,8 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    // フォールバックロケールは、指定したロケールが使用できない場合に使用するロケール
+    'fallback_locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,7 +110,8 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    // FakerPHPライブラリがデータを生成する際に使用
+    'faker_locale' => 'ja_JP',
 
     /*
     |--------------------------------------------------------------------------
@@ -170,6 +173,7 @@ return [
         Illuminate\Filesystem\FilesystemServiceProvider::class,
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Illuminate\Mail\MailServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
         Illuminate\Pagination\PaginationServiceProvider::class,
